@@ -32,11 +32,22 @@ HTML consists different type of elements which are called tags. Some of those ta
 
 ******
 
-"DIV" which defines the contaner. It stands for division. 
- 
-"P" Which is a paragraph container and stands for parapraph
+```html
+<div></div>
+```
 
-"A" Which is a link and stands for anchor tag
+which defines the contaner. It stands for division. 
+ 
+```html
+<p></p>
+```
+
+Which is a paragraph container and stands for parapraph
+
+```html
+<a href="#"></a>
+``` 
+Which is a link and stands for anchor tag
 
 And many more…
 
@@ -49,7 +60,7 @@ But not all of the html tags are for division and space control. Some of them ar
 
 ******
 
-### What does HTML document consist of?
+### What does an HTML document consist of?
 
 ******
 
@@ -102,14 +113,14 @@ The Body tag is where the content resides. Basically it contains all of the cont
 
 ******
 
-Css stands for Cascading Style Sheet. This documents only purpose is to style your html document. 
+CSS stands for Cascading Style Sheet. This documents only purpose is to style your html document. 
 
-
+******
 ### How does it works?
 
 ******
 
-The rules on the css files is applied by the browsers. The borwser reads the html document and find all the required documents like css and applies the rules based on the tag name, class name, or id name, of the element. 
+The rules on the css files is applied by the browsers. The browser reads the html document and finds all the required documents like css and applies the rules based on the tag name, class name, or id name, of the element. 
 
 ******
 
@@ -261,7 +272,7 @@ __Arithmetic Operators__
 Arithmetic operators are used to perform arithmetic between variables and/or values.
 
 ```javascript
-var z = ( x + y ) * ( 10 / 2 ) + ( 10 - 2) );
+var z = ( x + y ) * ( 10 / 2 ) + ( 10 - 2) ;
 ```
 
 "+" for addition 
@@ -278,14 +289,14 @@ __Conditionals Operators__
 Conditional operators are operators that evaluate the value on the right of the operator to the value on the left of the operator
 
 ```javascript
-5 == 5; // Checks for equality of the values
-5 != 4; // Checks if the values are not equal to each other
+5 === 5; // Checks for equality of the values
+5 !== 4; // Checks if the values are not equal to each other
 5 > 4; // Checks if 5 bigger than 4
 5 < 4; // Checks if 5 smaller than 4
 5 <= 4; // Checks if 5 smaller or equal to 4
-5 >=  4; // Checks if 5 bigger or equal to 4
+5 >= 4; // Checks if 5 bigger or equal to 4
 ```
-Conditional operators will always return __true__ or __false__ as a return varlue
+Conditional operators will always return __true__ or __false__ as a return value
 
 ******
 
@@ -304,7 +315,7 @@ var number_one = 5;
 var number_two = 5;
 var answer;
 
-if ( number_one == number_two) {
+if ( number_one === number_two) {
     answer = "Yes " + number_one + " is equal to " + number_two;
 } else {
     answer = "No, for some reason " + number_one + " is not equal to " + number_two;
@@ -349,8 +360,8 @@ Functions are code blocks that are called as a method to execute the code within
 
 ```javascript
 function greet ( name ) {
-    return "Hello" + name
-}); 
+    return "Hello" + name;
+} 
 
 greet( "Nur" );
 ```
@@ -440,7 +451,7 @@ $( document ).ready(function() {
 ```javascript
 $( document ).ready(function() {
     $(".btn2").click( function () {
-        $(".first").slideUp();
+        $("<div><p>I am Inserted Here</p></div>").insertBefore(".buttons");
     });
 });
 ```
