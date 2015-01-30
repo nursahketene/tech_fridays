@@ -36,12 +36,14 @@ HTML consists different type of elements which are called tags. Some of those ta
  
 "P" Which is a paragraph container and stands for parapraph
 
+"A" Which is a link and stands for anchor tag
+
 And many more…
 
 ******
 
-Each time you insert a new tag it acts like a box
-It will take a new line and will be under one another unless you specify it with javascript. 
+Each time you insert a new tag it acts like a box.
+It will take a new line and will be under one another unless you specify it with javascript or css to do something else. 
 
 But not all of the html tags are for division and space control. Some of them are about making the text italic or bold. Those tags do not take space just modify the content within the tag or modify the document itself. 
 
@@ -75,7 +77,7 @@ This tag defines that this document is an html document and it also specifies im
 </html>
 ```
 
-This tag contains html related tags within it. It takes to main elements. __<head>__ and __<body>__
+This tag contains html related tags within it. It has two main elements. __<head>__ and __<body>__
 
 ******
 
@@ -419,7 +421,7 @@ $( document ).ready(function() {
 ******
 
 
-### Calling Methods After User Interaction
+### Document Ready
 
 There are alot of times when you want to wait for the user to interact with the page to do something. 
 
